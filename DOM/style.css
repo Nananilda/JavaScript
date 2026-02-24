@@ -1,0 +1,19 @@
+.botao{
+    color: white;
+    background-color: #19B5FF;
+    border: 10px solid;
+    border-color: #1A4052;
+    border-radius: 50px;
+    padding: 18px 60px;
+    font: 22px;
+}
+
+.botao:hover{
+    cursor: pointer;
+}
+
+.destaque{
+    font-size: larger;
+    color: red;
+    background-color: yellow;
+}
