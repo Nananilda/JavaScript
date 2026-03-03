@@ -16,3 +16,20 @@ document.getElementById("caixa").style.backgroundColor = "lightblue";
 
 // element.classList.add(className) - adicioa uma classe css a um elemento
 document.getElementById("alerta").classList.add("destaque");
+
+// element.classList.remove(className) - remove uma classe CSS de um elemento
+document.getElementById("alert").classList.remove("oculto");
+
+// document.createElement(tagName) - cria um novo elemento HTML dinamicamente atraves do JS
+let novoParagrafo = document.createElement("p"); // qualquer elemento (p, h1, h2)
+novoParagrafo.textContent = "Esse elemento foi criado pelo JavaScript";
+document.getElementById("container").appendChild(novoParagrafo);
+
+// element.appendChild(child) - adiciona um novo elemento como um filho de um elemento existente
+let novoItem = document.createElement("li");
+novoItem.textContent = "Item novo";
+document.getElementById("lista").appendChild(novoItem);
+
+// element.removeChild(Child) - remove um elemento filho de um elemento existete
+let item = document.getElementById("item1");
+document.getElementById("list").removeChild(item);
