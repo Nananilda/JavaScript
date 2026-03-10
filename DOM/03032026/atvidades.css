@@ -1,0 +1,11 @@
+.esconder{
+    display: none;
+}
+
+.vazio{
+    color: red;
+}
+
+.preenchido{
+    color: green;
+}
