@@ -1,10 +1,34 @@
-body{
-    background-color: yellow;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.alinhar {
+body{
+  background-color: yellow;
   display: flex;
   justify-content: center; 
   align-items: center;     
-  height: 600px;           
+  height: 620px;           
+}
+
+div{
+  position: relative;
+}
+
+input{
+  border: white;
+  border-radius: 10px;
+  padding: 5px 30px 5px 15px;
+  font-size: 15px;
+  outline: 0;
+  width: 200px;
+}
+
+.icone{
+  font-size: 15px;
+  cursor: pointer;
+  position: absolute;
+  right: 5%;
+  top: 25%;
 }
