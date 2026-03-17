@@ -73,17 +73,14 @@ botao2.addEventListener("click", function() {
 // Desafio HARD
 let texto4 = document.getElementById("texto4");
 let botao3 = document.getElementById("botao3");
-let mensagem = document.getElementById("mensagem");
+let mensagem = document.getElementById("alerta");
 
 botao3.addEventListener("click", function(){
-    let novamensagem = document.createElement("p");
-    mensagem.innerText = texto4;
-    if (texto4 = ""){
-        alerta.classlist.toggle("vazio");
-        // o campo no nome é obrigatório
+    if (texto4.value === ""){
+        mensagem.innerText = "o campo nome é obrigatório";
+        mensagem.classList.add("vazio");
     } else {
         alerta.classList.toggle("preenchido");
-        // Nome enviado com sucesso
+        mensagem.innerText = "nome enviado com sucesso";
     }
-    // arrumar a mensagem -> aparece com o alerta e no alerta
 })
