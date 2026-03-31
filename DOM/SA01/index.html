@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="icon" type="img/png" href="img/favicon-16x16.png">
+</head>
+<body>
+    <h2>Cadastro de Usuário</h2>
+    <div>
+        <form>
+            Nome completo: <br>
+            <input type="text" id="nome" placeholder="Mariana José"><br>
+            <p id="mensagemNome"></p><br><br>
+
+            E-mail: <br>
+            <input type="text" id="email" placeholder="mariana.jose@gmail.com"><br>
+            <p id="mensagemEmail"></p><br><br>
+
+            Senha: <br>
+            <input type="password" id="senha" placeholder="Digite sua senha"><br>
+            <i class="bi bi-eye-fill icone" id="botaosenha"></i>
+            <p id="mensagemSenha"></p><br><br>
+            <p id="confirmar"></p>
+
+            Endereço: <br>
+            <input type="text" id="endereco" placeholder="Rua dos Bobos, 0, Bairro"><br>
+            <p id="mensagemEndereco"></p><br><br>
+
+            Número de telefone: <br>
+            <input type="text" id="telefone" placeholder="(xx)xxxxxxxxx"><br>
+            <p id="mensagemTelefone"></p><br>
+            <button id="adicionartelefone">+</button>
+            <p id="novotelefone"></p>
+
+            <button type="button" id="cadastrar">Cadastrar</button>
+            <p id="mensagem"></p>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
