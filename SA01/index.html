@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title> <!-- título da página -->
+    <link rel="stylesheet" href="style.css"> <!-- link entre html e css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"> <!-- viabiliza o icone -->
+    <link rel="icon" type="img/png" href="img/favicon-16x16.png"> <!-- icone -->
+</head>
+<body>
+    <h1>Cadastro de Usuário</h1> <!-- título -->
+    <div>
+        <form action="#">
+            <b>Nome completo:</b>  <!-- linha nome em negrito -->
+            <input type="text" id="nome" placeholder="Mariana José"><br>  <!-- input com tipo texto, id nome e placeholder que ajuda o usuário -->
+            <p id="mensagemNome"></p><br>  <!-- parágrafo que inclui a mensagem -->
+
+            <b>E-mail</b>
+            <input type="text" id="email" placeholder="mariana.jose@gmail.com"><br> <!-- input com tipo texto, id nome e placeholder que ajuda o usuário -->
+            <p id="mensagemEmail"></p><br> <!-- parágrafo que inclui a mensagem -->
+
+            <b>Senha:</b>
+            <input type="password" id="senha" placeholder="Digite sua senha"><br> <!-- input com tipo texto, id nome e placeholder que ajuda o usuário -->
+            <i class="bi bi-eye-fill icone" id="botaosenha"></i>
+            <p id="mensagemSenha"></p><br> <!-- parágrafo que inclui a mensagem -->
+            <p id="confirmar"></p>
+
+            <b>CEP:</b>
+            <input type="text" id="endereco" placeholder="xxxxx-xxx"><br> <!-- input com tipo texto, id nome e placeholder que ajuda o usuário -->
+            <p id="mensagemEndereco"></p><br> <!-- parágrafo que inclui a mensagem -->
+
+            <b>Número de telefone:</b>
+            <input type="text" id="telefone" placeholder="(xx)xxxxxxxxx"><br> <!-- input com tipo texto, id nome e placeholder que ajuda o usuário -->
+            <p id="mensagemTelefone"></p><br> <!-- parágrafo que inclui a mensagem -->
+            <button id="adicionartelefone" class="boato1">+</button> <!--botão para adicionar telefone -->
+            <p id="novotelefone"></p> <!-- parágrafo que estará o input de novo telefone -->
+            <br>
+            <button type="button" id="cadastrar">Cadastrar</button> <!-- botão de cadastro -->
+            <p id="mensagem"></p> <!-- parágrafo que inclui a mensagem -->
+        </form>
+    </div>
+
+    <script src="script.js"></script> <!-- link entre html e javaScript -->
+</body>
+</html>
