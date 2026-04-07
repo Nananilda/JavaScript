@@ -11,7 +11,7 @@ let mascaraNome = /^[A-Za-zçÇÀ-ÿ\s]+$/;
 nome.addEventListener("keyup", function(){ // evento para validação do nome
     if (!mascaraNome.test(nome.value)) { // valida por meio da máscara
         mensagemNome.textContent = "nome inválido";
-        mensagemNome.classList.add("erro");
+        mensagemNome.classList.add("erro"); // cor vermelha na mensagem
         return;
     } else if (nome.value.length <= 3){ // valida por meio de tamanho mínimo
         mensagemNome.textContent = "nome inválido";
@@ -20,7 +20,7 @@ nome.addEventListener("keyup", function(){ // evento para validação do nome
     } else{ // retorna válido se todas forem verdadeiras
         mensagemNome.textContent = "nome válido!";
         mensagemNome.classList.remove("erro");
-        mensagemNome.classList.add("certo");
+        mensagemNome.classList.add("certo"); // cor verde na mensagem
     }
 });
 
@@ -186,6 +186,7 @@ botaoCadastrar.addEventListener("click", function() {
 
     if (nomeCerto && emailCerto && senhaCerta && telefoneCerto && enderecoCerto){
         mensagem.textContent = "cadastro realizado com sucesso!"; // se todas as mensagens estiverem na classe "certo" o cadastro é realizado
+        mensagem.classList.remove("erro");
         mensagem.classList.add("certo");
     } else{
         mensagem.textContent = "existem campos a serem corrigidos.";
