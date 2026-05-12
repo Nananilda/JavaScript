@@ -681,23 +681,40 @@ footer .logo-footer span {
    RESPONSIVE — TABLET (~1024px)
    ============================================================ */
 @media (max-width: 64rem) {
-    header {}
+  header {
+    padding: 0 30px;
+  }
 
-    main {}
+  main {
+    padding: 50px 30px;
+  }
 
-    #sobre {}
+  #sobre {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
 
-    .cards {}
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
 
-    .cards .card:last-child {}
+  .cards .card:last-child {
+    grid-column: span 2;
+  }
 
-    footer {}
+  footer {
+    grid-template-columns: 1fr 1fr;
+    padding: 50px 30px;
+  }
 
-    footer>div:first-child {}
+  footer > div:first-child {
+    grid-column: span 2;
+  }
 
-    #franqueado {}
+  #franqueado {
+    padding: 40px 36px;
+  }
 }
-
 /* ============================================================
    RESPONSIVE — MOBILE (~768px)
    ============================================================ */
