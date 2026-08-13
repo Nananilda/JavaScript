@@ -1,5 +1,5 @@
 class Aluno {
-    constructor(nome, idade, curso, matricula){
+    constructor(nome, idade, curso, matricula) {
         this.nome = nome;
         this.idade = idade;
         this.curso = curso;
@@ -10,22 +10,42 @@ class Aluno {
         console.log(`${this.nome} está estudando`);
     }
 
-    apresentar(){
+    apresentar() {
         console.log(`${this.nome} está apresentando`);
+    }
+
+}
+
+class Turma {
+    constructor() {
+        this.alunos = [];
+    }
+
+    adicionarAluno(aluno) {
+        this.alunos.push(aluno);
     }
 
     exibirNaTela() {
         const resultado = document.querySelector("#resultado");
 
-        resultado.innerHTML = `
-        <p>Nome: ${this.nome}</p>
-        <p>Idade: ${this.idade}</p>
-        <p>Curso: ${this.curso}</p>
-        <p>Matrícula: ${this.matricula}</p>
-        `;
+        resultado.innerHTML = "";
+
+        this.alunos.forEach(function (aluno) { 
+            resultado.innerHTML += `
+            <div>
+                <p>Nome: ${aluno.nome}</p>
+                <p>Idade: ${aluno.idade}</p>
+                <p>Curso: ${aluno.curso}</p>
+                <p>Matrícula: ${aluno.matricula}</p>
+                <br>
+            </div>
+            `;
+        })
     }
+
 }
 
+const turma =  new Turma();
 const nome = document.querySelector("#nome");
 const idade = document.querySelector("#idade");
 const curso = document.querySelector("#curso");
@@ -33,10 +53,13 @@ const matricula = document.querySelector("#matricula");
 
 const botaoCadastrar = document.querySelector("#botaoCadastrar");
 
-botaoCadastrar.addEventListener("click", function(){
+botaoCadastrar.addEventListener("click", function () {
+
     const aluno = new Aluno(nome.value, idade.value, curso.value, matricula.value);
+
+    turma.adicionarAluno(aluno);
+    turma.exibirNaTela();
 
     aluno.estudar();
     aluno.apresentar();
-    aluno.exibirNaTela();
 })
