@@ -4,10 +4,11 @@ class Produto {
         this.preco = preco;
         this.categoria = categoria;
         this.desconto = desconto;
+
+        this.precoOriginal = this.preco; 
     }
 
     aplicarDesconto() {
-        const precoOriginal = this.preco;
         this.preco = this.preco * (1 - (this.desconto / 100));
     }
 
@@ -15,11 +16,11 @@ class Produto {
         const resultado = document.querySelector("#resultado");
 
         resultado.innerHTML += `
-                <p>Nome: ${this.nome}</p> 
-                <p>Preço original: ${this.precoOriginal}</p>
-                <p>Categoria: ${this.categoria}</p>
-                <p>Desconto: ${this.desconto}</p>
-                <p>Preço com desconto: ${this.preco}</p>
+                <p>nome: ${this.nome}</p> 
+                <p>categoria: ${this.categoria}</p>
+                <p>desconto: ${this.desconto}</p>
+                <p>preço original: ${this.precoOriginal}</p>
+                <p>preço com desconto: ${this.preco}</p>
             `;
     }
 }
@@ -32,9 +33,7 @@ const desconto = document.querySelector("#desconto");
 const botaoCadastrar = document.querySelector("#botaoCadastrar");
 
 botaoCadastrar.addEventListener("click", function () {
-
     const produto = new Produto(nome.value, preco.value, categoria.value, desconto.value);
     produto.aplicarDesconto();
     produto.exibir();
-
-})
+});
