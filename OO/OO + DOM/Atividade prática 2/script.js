@@ -38,9 +38,9 @@ class Produtos {
                 <p>-----------------------------------</p>
                 <p>nome: ${produto.nome}</p> 
                 <p>categoria: ${produto.categoria}</p>
-                <p>desconto: ${produto.desconto}%</p>
-                <p>preço original: R$ ${produto.precoOriginal}</p>
-                <p>preço com desconto: R$ ${produto.preco}</p>
+                <p>desconto: ${produto.desconto}</p>
+                <p>preço original: ${produto.precoOriginal}</p>
+                <p>preço com desconto: ${produto.preco}</p>
                     
                 <button onclick="produtos.excluirProduto(${index})">Excluir</button>
             `;
