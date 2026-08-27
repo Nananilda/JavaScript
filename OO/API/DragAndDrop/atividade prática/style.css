@@ -1,0 +1,89 @@
+body {
+    background-color: #f3eafa;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 30px;
+}
+
+#grupoPrincipal {
+    display: flex;
+    gap: 30px;
+    width: 800px;
+    margin: auto;
+}
+
+#grupoPrincipal > div {
+    background-color: aliceblue;
+    padding: 20px;
+    width: 50%;
+    border-radius: 10px;
+}
+
+#grupoSecundario {
+    display: flex;
+    gap: 30px;
+    width: 800px;
+    margin: 30px auto;
+}
+
+#grupoSecundario > div {
+    background-color: aliceblue;
+    padding: 20px;
+    width: 50%;
+    min-height: 300px;
+    border-radius: 10px;
+}
+
+h2, h3, h4 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #6b3f8f;
+}
+
+input {
+    padding: 8px;
+    border: 1px solid #cdb9d9;
+    border-radius: 5px;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: #8e5bb5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#resultadoPessoa p {
+    background-color: #e8d8f2;
+    color: #5b3475;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: grab;
+}
+
+.grupo {
+    background-color: #f3eafa;
+    border: 2px solid #b99acb;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.grupo h4 {
+    margin: 5px 0 10px;
+}
+
+.pessoasGrupo {
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    min-height: 40px;
+}
+
+.pessoasGrupo p {
+    background-color: #e8d8f2;
+    color: #5b3475;
+    padding: 7px;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: grab;
+}
