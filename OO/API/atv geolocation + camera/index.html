@@ -8,32 +8,37 @@
     <title>Atividade prática</title>
 </head>
 
-<body>
-    <div id="fundo">
-        <h1>Registro de ponto</h1>
+<!-- O site é uma simulação do VSCO, mas sem edição de fotos e nenhuma funcionalidade legal, é para simular
+(ou algo do tipo), o envio de fotos para um aplicativo de postagens, e ele naturalmente pega os dados pessoais (?).
+A funcionalidade da mensagem é um retorno visual-->
 
+<body>
+    <h1><b>Registro de fotos</b></h1>
+    <div id="fundo">
+        <h3>Localização</h3>
         <div id="quadro1">
-            <h3>Localização</h3>
-            <div>
+            <div id="quadrinho">
                 <p><b>Latitude: </b></p>
                 <p id="latitude"></p>
             </div>
 
-            <div>
+            <div id="quadrinho">
                 <p><b>Longitude: </b></p>
                 <p id="longitude"></p>
             </div>
 
-            <div>
+            <div id="quadrinho">
                 <p><b>Precisão: </b></p>
                 <p id="precisao"></p>
             </div>
         </div>
 
+        <h3>Câmera</h3>
         <div id="quadro2">
-            <h3>Câmera</h3>
             <video id="camera" autoplay></video>
         </div>
+
+        <button id="botao"><b>Enviar registro</b></button>
     </div>
 
     <script src="script.js"></script>
