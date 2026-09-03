@@ -1,13 +1,13 @@
 navigator.geolocation.getCurrentPosition(
     function (posicao) {
         const latitude = document.querySelector("#latitude");
-        latitude.innerHTML = " ", posicao.coords.latitude;
+        latitude.innerHTML = "&nbsp;" + posicao.coords.latitude;
 
         const longitude = document.querySelector("#longitude");
-        longitude.innerHTML = " ", posicao.coords.longitude;
+        longitude.innerHTML = "&nbsp;" + posicao.coords.longitude;
 
         const precisao = document.querySelector("#precisao");
-        precisao.innerHTML = " ", posicao.coords.accuracy;
+        precisao.innerHTML = "&nbsp;" + posicao.coords.accuracy;
     },
 );
 
