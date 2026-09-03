@@ -21,5 +21,5 @@ navigator.mediaDevices.getUserMedia({
 
 const botao = document.getElementById('botao');
 botao.addEventListener('click', function () {
-    alert('foto enviada!');
+    alert("foto enviada!");
 });
