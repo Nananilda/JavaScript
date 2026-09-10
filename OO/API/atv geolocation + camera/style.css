@@ -64,7 +64,7 @@ h3 {
     border-radius: 15px;
 }
 
-video {
+video, img {
     border-radius: 20px;
 }
 
@@ -77,4 +77,8 @@ button {
     margin-left: auto;
     display: block;
     font-size: medium;
+}
+
+canvas {
+    display: none;
 }
