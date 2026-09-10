@@ -76,6 +76,6 @@ contexto.lineTo(220, 125);
 contexto.stroke();
 
 contexto.beginPath(); 
-contexto.moveTo(200, 100); 
+contexto.moveTo(240, 100); 
 contexto.lineTo(220, 125);
 contexto.stroke();
