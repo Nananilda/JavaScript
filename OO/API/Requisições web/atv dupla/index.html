@@ -9,31 +9,32 @@
 </head>
 
 <body>
-
     <h1>Doação de Alimentos</h1>
 
     <div class="container">
-
         <div class="formulario">
             <input type="text" id="nome" placeholder="Digite seu nome">
             <input type="email" id="email" placeholder="Digite seu email">
             <input type="text" id="codigoProduto" placeholder="Digite o código do produto">
-            <button id="buscarDoacao">Buscar Doação</button>
+            <!-- Campo que recebe o código de barras do produto e o JavaScript utiliza o valor digitado para montar a requisição e consultar a API -->
+            <button id="buscarDoacao">Buscar Doação</button> <!-- No JavaScript, um evento de clique é associado
+                a este botão para executar a consulta à API -->
         </div>
 
-        <div id="resultado"></div>
+        <div id="resultado"></div> <!-- Área destinada à exibição dos resultados da API -->
 
         <h2>Códigos de produtos para teste</h2>
-        <table id="tabelaCodigos">
+
+        <table id="tabelaCodigos"> <!-- Tabela com códigos de barras para teste -->
             <thead>
                 <tr>
                     <th>Produto</th>
                     <th>Código</th>
                 </tr>
             </thead>
+
             <tbody>
                 <tr>
-                    
                     <td>Nutella</td>
                     <td>3017620422003</td>
                 </tr>
@@ -57,12 +58,36 @@
                     <td>Oreo</td>
                     <td>7622210449283</td>
                 </tr>
+                <tr>
+                    <td>Miojo Galinha Caipira</td>
+                    <td>7891079000229</td>
+                </tr>
+                <tr>
+                    <td>Leite Italac</td>
+                    <td>7898080640017</td>
+                </tr>
+                <tr>
+                    <td>Chocolate Bis</td>
+                    <td>7622210575999</td>
+                </tr>
+                <tr>
+                    <td>Óleo de soja Liza</td>
+                    <td>7896036090244</td>
+                </tr>
+                <tr>
+                    <td>Café 3 Corações</td>
+                    <td>7896045102440</td>
+                </tr>
+                <tr>
+                    <td>Fandangos queijo</td>
+                    <td>7892840822910</td>
+                </tr>
             </tbody>
         </table>
-
     </div>
 
     <script src="script.js"></script>
 
 </body>
+
 </html>
