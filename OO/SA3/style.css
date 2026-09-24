@@ -80,10 +80,10 @@ section {
 
 .topo > div {
     background-color: aliceblue;
-    margin: 10px;
+    margin: 15px;
     border-radius: 10px;
     height: auto;
-    padding: 0px;
+    padding: 16px;
 }
 
 
@@ -91,10 +91,11 @@ section {
 
 .noticias > div {
     background-color: aliceblue;
-    margin: 10px;
+    margin: 15px;
     border-radius: 10px;
     height: auto;
-    padding: 0px;
+    padding: 16px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); 
 }
 
 /* rodapé */
@@ -266,16 +267,25 @@ button {
 /* previsão do tempo */
 
 .topo .previsao {
-    background-color: aliceblue;
+    background-color: rgb(229, 187, 249);
     margin: 10px;
     padding: 0px;
     border-radius: 10px;
-
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.topo button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(205, 126, 241);
+    border-radius: 5px;
+    border: 0px;
+    margin: 5px;
+    padding: 5px;
 }
 
 .topo .previsao h3 {
