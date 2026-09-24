@@ -1,0 +1,291 @@
+/* corpo */
+body {
+    margin: 0px;
+    background-color: rgb(232, 210, 232);
+}
+
+/* navegação */
+
+nav {
+    display: flex;
+    align-items: center;
+    background-color: rgb(173, 60, 173);
+    padding: 10px 30px;
+    min-height: 80px;
+}
+
+nav h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    margin: 0px 30px 0px 0px;
+    white-space: nowrap;
+}
+
+nav #menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex: 1;
+    background-color: transparent;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 0px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0px;
+    padding: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    white-space: nowrap;
+}
+
+nav a:hover {
+    color: purple;
+}
+
+
+/* texto */
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* quadro das notícias */
+div h3 {
+    text-align: start;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding: 5px 5px 0px 5px;
+}
+
+div p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding: 0px 5px 0px 5px;
+}
+
+div a {
+    padding: 0px 50px 50px 5px;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+}
+
+/* blocos do topo */
+
+.topo > div {
+    background-color: aliceblue;
+    margin: 10px;
+    border-radius: 10px;
+    height: auto;
+    padding: 0px;
+}
+
+
+/* blocos das notícias */
+
+.noticias > div {
+    background-color: aliceblue;
+    margin: 10px;
+    border-radius: 10px;
+    height: auto;
+    padding: 0px;
+}
+
+/* rodapé */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    background-color: rgb(173, 60, 173);
+}
+
+/* imagem */
+img {
+    width: 90%;
+    height: 200px;
+    border-radius: 10px;
+    margin: 10px 0px 10px 5px;
+}
+
+#imagemCentro {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+/* contato */
+h2,
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+#noticiaPrincipal {
+    max-width: 410px;
+    margin: 50px auto 100px auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+}
+
+input {
+    width: 400px;
+}
+
+textarea {
+    width: 400px;
+    height: auto;
+}
+
+/* botão */
+button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: plum;
+    border-radius: 5px;
+    border: 0px;
+    margin: 5px;
+    padding: 5px;
+}
+
+/* validação */
+.erro {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: red;
+}
+
+.certo {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: green;
+}
+
+/* ---------------- media queryes --------------- */
+
+/* celular */
+@media (max-width: 425px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 15px;
+    }
+
+    nav h1 {
+        margin: 15px 0px 10px 0px;
+        text-align: center;
+    }
+
+    section {
+        grid-template-columns: 1fr;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        margin: 10px 0px;
+    }
+
+    #imagemCentro {
+        border: none;
+        margin: 0;
+        padding: 0px 10px;
+    }
+
+    #noticiaPrincipal {
+        max-width: 100%;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+    }
+}
+
+/* tablet */
+@media (min-width: 426px) and (max-width: 1023px) {
+    nav {
+        justify-content: center;
+        padding-bottom: 15px;
+    }
+
+    section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #imagemCentro {
+        border: none;
+        margin: 0;
+    }
+}
+
+/* computador */
+@media (min-width: 1024px) {
+    section {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #imagemCentro {
+        border: none;
+        margin: 0;
+    }
+}
+
+/* parte superior */
+
+.topo {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+}
+
+
+/* banner */
+
+.topo .banner {
+    background-color: transparent;
+    margin: 10px;
+    padding: 0px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.topo .banner img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    margin: 0px;
+    border-radius: 10px;
+}
+
+
+/* previsão do tempo */
+
+.topo .previsao {
+    background-color: aliceblue;
+    margin: 10px;
+    padding: 0px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.topo .previsao h3 {
+    margin: 0px 0px 20px 0px;
+}
+
+.topo .previsao button {
+    margin: 0px;
+}
+
+.topo .previsao p {
+    text-align: center;
+}
