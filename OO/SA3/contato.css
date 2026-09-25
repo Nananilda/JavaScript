@@ -1,0 +1,328 @@
+/* corpo */
+
+body {
+    margin: 0px;
+    background-color: rgb(232, 210, 232);
+}
+
+/* navegação */
+
+nav {
+    display: flex;
+    align-items: center;
+    background-color: rgb(173, 60, 173);
+    padding: 0px 30px;
+    height: 80px;
+    box-sizing: border-box;
+    color: white;
+}
+
+nav h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    margin: 0px 40px 0px 0px;
+    padding: 0px;
+    white-space: nowrap;
+    line-height: 80px;
+}
+
+nav #menu {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    height: 80px;
+    margin: 0px;
+    padding: 0px;
+    background-color: transparent;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0px 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    white-space: nowrap;
+    line-height: 80px;
+    display: inline-block;
+}
+
+nav a:hover {
+    color: purple;
+}
+
+#botaoMenu {
+    display: none;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 5px;
+    margin-left: auto;
+}
+
+/* textos */
+
+h2,
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main > h2 {
+    text-align: center;
+    margin: 35px 0px 10px 0px;
+}
+
+main > p {
+    text-align: center;
+    margin: 0px 10px 30px 10px;
+}
+
+/* formulário */
+
+#noticiaPrincipal {
+    max-width: 500px;
+    margin: 30px auto 80px auto;
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 25px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+#noticiaPrincipal form {
+    width: 100%;
+}
+
+#noticiaPrincipal label {
+    display: block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    margin: 12px 0px 5px 0px;
+}
+
+#noticiaPrincipal input,
+#noticiaPrincipal textarea {
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 5px;
+    padding: 8px;
+}
+
+#noticiaPrincipal input {
+    height: 38px;
+}
+
+#noticiaPrincipal textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+#noticiaPrincipal input:focus,
+#noticiaPrincipal textarea:focus {
+    outline: none;
+    border: 1px solid rgb(173, 60, 173);
+}
+
+/* mensagens de validação */
+
+#noticiaPrincipal p {
+    text-align: left;
+}
+
+#mensagemNome,
+#mensagemEmail,
+#mensagemTelefone,
+#mensagemCep {
+    font-size: 13px;
+    min-height: 18px;
+    margin: 3px 0px;
+    padding: 0px;
+}
+
+/* botões */
+
+button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: plum;
+    border-radius: 5px;
+    border: 0px;
+    margin: 8px 0px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(205, 126, 241);
+}
+
+#buscarcep {
+    margin-top: 5px;
+}
+
+/* botão enviar */
+
+#noticiaPrincipal button[type="submit"] {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+/* validação */
+
+.erro {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: red;
+}
+
+.certo {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: green;
+}
+
+/* rodapé */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    background-color: rgb(173, 60, 173);
+    color: white;
+    min-height: 60px;
+}
+
+footer p {
+    text-align: center;
+    margin: 0px;
+}
+
+/* celular */
+
+@media (max-width: 425px) {
+
+    /* navegação */
+
+    nav {
+        flex-wrap: wrap;
+        align-items: center;
+        height: auto;
+        min-height: 80px;
+        padding: 10px 20px;
+    }
+
+    nav h1 {
+        margin: 0px;
+        line-height: 80px;
+    }
+
+    #botaoMenu {
+        display: block;
+        margin-left: auto;
+    }
+
+    nav #menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    nav #menu.ativo {
+        display: flex;
+    }
+
+    nav #menu a {
+        width: 100%;
+        text-align: center;
+        padding: 12px 0px;
+        line-height: normal;
+    }
+
+    /* formulário */
+
+    main > h2 {
+        font-size: 24px;
+        margin-top: 25px;
+    }
+
+    main > p {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    #noticiaPrincipal {
+        max-width: 100%;
+        margin: 20px 15px 50px 15px;
+        padding: 20px;
+    }
+
+    #noticiaPrincipal input,
+    #noticiaPrincipal textarea {
+        width: 100%;
+    }
+}
+
+/* tablet */
+
+@media (min-width: 426px) and (max-width: 1023px) {
+
+    nav {
+        flex-wrap: wrap;
+        align-items: center;
+        height: auto;
+        min-height: 80px;
+        padding: 10px 30px;
+    }
+
+    nav h1 {
+        margin: 0px;
+        line-height: 80px;
+    }
+
+    #botaoMenu {
+        display: block;
+        margin-left: auto;
+    }
+
+    nav #menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    nav #menu.ativo {
+        display: flex;
+    }
+
+    nav #menu a {
+        width: 100%;
+        text-align: center;
+        padding: 12px 0px;
+        line-height: normal;
+    }
+
+    /* formulário */
+
+    #noticiaPrincipal {
+        max-width: 600px;
+        margin-top: 30px;
+    }
+}
+
+/* computador */
+
+@media (min-width: 1024px) {
+
+    #noticiaPrincipal {
+        max-width: 500px;
+    }
+}
